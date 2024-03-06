@@ -1,12 +1,14 @@
 # from typing import Type
-from .animal import Animal
-from ..interfaces.locomover import LocomoverInterface
+from .Animal import Animal
+from ..interfaces.Locomover import LocomoverInterface
 
 class Panda(Animal, LocomoverInterface):
 
-    def nascer(self):
+    def _nascer(self):
         Animal._nascer()
-        print("de um mamífero!")
+        print("\nNascedo de um mamífero!")
 
     def locomover(self):
         print("Eu posso andar em pé ou usando as quatro patas!")
+
+
